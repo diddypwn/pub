@@ -260,3 +260,6 @@ Id<-test2$Id
 Prediction<-y_pred
 out<-data.frame(Id,Prediction)
 write.csv(out,"out2.csv",row.names=F)
+
+
+
