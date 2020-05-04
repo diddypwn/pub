@@ -248,6 +248,8 @@ mean(abs(ridge.testing-test1$revenue)/test1$revenue*100)
 #------------------------------------------------------------------------------
 ## Resolving to use other model - RANDOM FOREST on Transformed Dataset
 #------------------------------------------------------------------------------
+# Suggested by other competitors
+
 ?randomForest
 fit<-randomForest(train1d_px$revenue~.,data=train1d_px2)
 summary(fit)
@@ -256,5 +258,5 @@ y_pred<-predict(fit,test)
 test2 = read.csv("C:\\Temp\\restaurant-revenue-prediction\\test.csv", sep = ',')
 Id<-test2$Id
 Prediction<-y_pred
-submission<-data.frame(Id,Prediction)
-write.csv(submission,"submission2.csv",row.names=F)
+out<-data.frame(Id,Prediction)
+write.csv(out,"out2.csv",row.names=F)
