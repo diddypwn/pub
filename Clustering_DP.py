@@ -37,7 +37,7 @@ InteractiveShell.ast_node_interactivity = "all"
 #--------------------------------------------------------------------------------------------
 
 # Change source path + file as desired
-path = "C:\\Users\\davie\\OneDrive - Queen's University\\MMA 869 - Machine Learning & AI\\Individual Assignment\\"
+path = ""
 file = "jewelry_customers.csv"
 df = pd.read_csv(path + file)
 
